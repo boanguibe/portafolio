@@ -11979,8 +11979,19 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  background-color: #f1f1ec;
+}
+
+.color-primario {
+  color: #505270;
+}
+
+.color-secundario {
+  color: #91c9f3;
+}
+
+.bg-primario {
+  background-color: #f1f1ec;
 }
 
 /* clases de iconos */
@@ -12018,6 +12029,6 @@ body {
 
 /* clases de iconos */
 .bg-button {
-  background-color: #146991;
+  background-color: #505270;
   color: white;
 }/*# sourceMappingURL=main.css.map */

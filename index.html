@@ -11,22 +11,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm bg-light" id="">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" alt="Bootstrap" width="100" height="50" />
-            </a> -->
-            <span class="navbar-brand f-1">BorisGuiñez</span>
+            <span class="navbar-brand f-1 color-primario fw-bold fst-italic">BorisGuiñez</span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Mis habilidades</a>
-                    <a class="nav-link" href="#">Proyectos</a>
-                    <a class="nav-link" href="#">Contactos</a>
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#habilidades">Mis habilidades</a>
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    <a class="nav-link" href="#contactos">Contactos</a>
                 </div>
             </div>
         </div>
@@ -37,14 +34,19 @@
             <div class="col-12 col-md-6">
                 <img src="assets/img/developer.svg" class="img-fluid" alt="devekioer">
             </div>
-            <div class="col-12 col-md-6">
-                <h1>Desarrollador Web</h1>
+            <div class="col-12 mt-5 col-md-6 mt-md-0">
+                <h1 class="color-primario fw-bold">Soy Boris Guiñez</h1>
+                <h2 class="color-secundario fw-bold">Desarrollador Front-End</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus unde autem, repudiandae
+                    quasi tenetur voluptates et sit commodi corporis aliquid alias nostrum impedit quae nisi. Totam hic
+                    enim debitis!</p>
+                <button class="col-12 col-md-5 btn bg-button">Contactame</button>
             </div>
         </div>
     </header>
 
-    <section class="container mt-5">
-        <h2 class="text-center ">Mis Habilidades</h2>
+    <section class="container mt-5" id="habilidades">
+        <h2 class="text-center color-primario fw-bold">Mis Habilidades</h2>
         <div class="row mt-5 ">
             <div class="col-6 d-flex-row justify-content-space-between">
                 <div class="row mb-2">
@@ -90,8 +92,8 @@
 
     </section>
 
-    <section class="container mt-5">
-        <h2 class="text-center mb-5">Mis Proyectos</h2>
+    <section class="container mt-5" id="proyectos">
+        <h2 class="text-center mb-5 color-primario fw-bold">Mis Proyectos</h2>
         <div class="row">
             <div class="col-md-3 col-6">
                 <img src="assets/img/meetcoffee.png" class="img-fluid" alt="img-proyecto1">
@@ -112,8 +114,8 @@
         </div>
     </section>
 
-    <section class="container mt-5">
-        <h2 class="text-center mb-5">Contactame</h2>
+    <section class="container mt-5" id="contactos">
+        <h2 class="text-center mb-5 color-primario fw-bold">Contactame</h2>
         <div class="row mt-5 mb-5">
             <div class="col-12 col-md-6">
                 <section class="container d-flex">
@@ -128,11 +130,13 @@
                             <input type="email" class="form-control" placeholder="Tu Email">
                         </div>
                         <div>
-                            <input type="text-area" class="form-control" placeholder="Escribe tu mensaje">
+                            <!-- <input type="text-area" class="form-control" placeholder="Escribe tu mensaje"> -->
+                            <textarea class="form-control" placeholder="Escribe tu mensaje" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
                         </div>
                         <div class="col-12 d-grid gap-2 col-md-5">
                             <button class="btn bg-button" type="button">Enviar</button>
-                          </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -140,23 +144,23 @@
             <div class="col-12 mt-5 col-md-6 mt-md-0">
                 <div class="row">
                     <div class="col-12 mb-2">
-                        <i class="fa-solid fa-phone fs-2"></i>
+                        <i class="fa-solid fa-phone fs-2 color-primario"></i>
                         <span class="ms-2">+56 9 78994541</span>
                     </div>
                     <div class="col-12 mb-2">
-                        <i class="fa-solid fa-envelope fs-2"></i>
+                        <i class="fa-solid fa-envelope fs-2 color-primario"></i>
                         <span class="ms-2">borisandres.guinez@gmail.com</span>
                     </div>
                     <div class="col-12 mb-2">
-                        <i class="fa-brands fa-linkedin fs-2"></i>
+                        <i class="fa-brands fa-linkedin fs-2 color-primario"></i>
                         <span class="ms-2">Tulinkedin</span>
                     </div>
                     <div class="col-12 mb-2">
-                        <i class="fa-brands fa-github fs-2"></i>
+                        <i class="fa-brands fa-github fs-2 color-primario"></i>
                         <span class="ms-2">https://github.com/boanguibe</span>
                     </div>
                     <div class="col-12 mb-2">
-                        <i class="fa-brands fa-instagram fs-2"></i>
+                        <i class="fa-brands fa-instagram fs-2 color-primario"></i>
                         <span class="ms-2">Tu Instagram</span>
                     </div>
                 </div>
@@ -165,6 +169,11 @@
 
         </div>
     </section>
+    <footer class="mt-5 mb-5">
+        <p class="text-center color-primario">Todos los derechos reservados 2024</p>
+    </footer>
+
+    <script type="module" src="./assets/js/main.js"></script>
 
 </body>
 

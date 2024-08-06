@@ -5,7 +5,16 @@ body{
     font-size: $font-size-base;
     font-weight: $font-weight-base;
     line-height: $line-height-base;
-    color: $body-color;
     text-align: $body-text-align;
-    background-color: $body-bg;
+    background-color: $bg-primario;
+}
+
+.color-primario{
+    color: $color-primario;
+}
+.color-secundario{
+    color: $color-secundario;
+}
+.bg-primario{
+    background-color: $bg-primario;
 }
